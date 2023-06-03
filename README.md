@@ -11,6 +11,13 @@ The app hosted at http://82.148.28.55/
 
 ## How to launch the app
 
-To more convenience, please wait until the app would be hosted 🙏 (till tomorrow, June 1st)
+The online version is availiable at http://82.148.28.55/, however, if you want to run it locally do the next
+
+1. Ensure that you have Docker on your computer
+2. Pull the latest version of dokerized elastic search from Docker Hub
+3. Run this command on terminal to laund an elastic search server
+```docker run --rm -p 9200:9200 -p 9300:9300 -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch```
+5.  Clone the repo and run `app.py`
+6.  The app will be running at http://localhost:5000
 
 
